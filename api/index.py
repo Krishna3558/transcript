@@ -24,7 +24,7 @@ def get_transcript(video_id):
         for code in english_codes:
             try:
                 transcript = transcript_list.find_transcript([code])
-                english_transcripts[code] = transcript.fetch()
+                english_transcripts[code] = transcript.fetch(cookies="cookies.txt")
             except Exception as e:
                 print(f"No transcript found for {code}")
                 continue
