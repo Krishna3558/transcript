@@ -17,7 +17,7 @@ def get_transcript(video_id):
         english_codes = ['en', 'en-GB', 'en-US', 'en-IN', 'en-AU', 'en-CA', 'en-NZ', 'en-ZA', 'en-IE', 'en-SG', 'en-FR']
         
         # Here's the correct cookies parameter
-        transcript_list = YouTubeTranscriptApi.list_transcripts(video_id , cookies="../cookies.txt")
+        transcript_list = YouTubeTranscriptApi.list_transcripts(video_id , cookies="cookies.txt")
         
         english_transcripts = {}
         
