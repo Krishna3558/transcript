@@ -14,7 +14,7 @@ def test_api():
 @app.route('/api/transcript/<video_id>', methods=['GET'])
 def get_transcript(video_id):
     try:
-        english_codes = ['en', 'en-GB', 'en-US', 'en-IN', 'en-AU', 'en-CA', 'en-NZ', 'en-ZA', 'en-IE', 'en-SG', 'en-FR']
+        english_codes = ['en']
         
         # Here's the correct cookies parameter
         transcript_list = YouTubeTranscriptApi.list_transcripts(video_id , cookies="cookies.txt")
